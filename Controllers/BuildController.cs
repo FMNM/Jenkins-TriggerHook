@@ -9,11 +9,12 @@ namespace Jenkins_TriggerHook.Controllers
     public class BuildController : Controller
     {
         [HttpGet]
+        //[Route("trigger")]
         public async Task<IActionResult> TriggerJenkins()
         {
             try
             {
-                return Ok("Trigger Reached");
+                return Ok("Jenkins build started");
             }
             catch (Exception ex)
             {
